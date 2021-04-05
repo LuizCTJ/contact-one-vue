@@ -5,14 +5,20 @@
         <b-form>
           <b-img class="mb-3" src="assets/logocontactone.png" fluid></b-img>
           <b-form-group label="Login:">
-            <b-form-input v-model="login" type="text" required placeholder="Login do usuário">
+            <b-form-input v-model="login" type="text" required placeholder="O login é admin">
             </b-form-input>
           </b-form-group>
           <b-form-group label="Senha:">
-            <b-form-input v-model="password" type="password" required placeholder="Senha">
+            <b-form-input
+              v-model="password"
+              value="admin"
+              type="password"
+              required
+              placeholder="A senha é admin"
+            >
             </b-form-input>
           </b-form-group>
-          <b-button @click="authenticateLogin" type="submit" block variant="dark">Entrar</b-button>
+          <b-button @click="authenticateLogin" block variant="dark">Entrar</b-button>
         </b-form>
       </b-card>
     </b-col>
